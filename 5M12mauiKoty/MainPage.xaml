@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_5M12mauiKoty.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            BackgroundColor="#00796B"
+            x:Name="Tlo">
+            <Label
+                Text="Galeria"
+                TextColor="White"
+                FontSize="Large"
+                BackgroundColor="#004C40"
+                />
+            <Image
+                Source="kot1.png"
+                x:Name="imgName"
+                />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button
+                    Text="PREV"
+                    WidthRequest="100"
+                    HeightRequest="50"
+                    BackgroundColor="#004C40"
+                    Clicked="onBtnPrev"
+                    CornerRadius="2"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="Start"
+                    />
+                <Button
+                    Text="NEXT"
+                    WidthRequest="100"
+                    HeightRequest="50"
+                    BackgroundColor="#004C40"
+                    Clicked="onBtnNext"
+                    CornerRadius="2"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    />                
+            </Grid>
+
+            <HorizontalStackLayout Spacing="28">
+                <Label
+                    Text="Który obraz wyświetlić? "
+                    VerticalOptions="Center"
+                    />
+                <Entry
+                    x:Name="entObraz"
+                    VerticalOptions="Center"
+                    WidthRequest="150"
+                    BackgroundColor="white"
+                    TextChanged="onEntryCom"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="340">
+                <Label
+                    Text="Tło niebieskie?"
+                    VerticalOptions="Center"
+                    />
+                <Switch
+                    IsToggled="False"
+                    Toggled="onTloToggled"
+                    x:Name="Togswitch"
+                    />
+            </HorizontalStackLayout>
+            <Label
+                Text="Autor:Roksana"
+                FontSize="20"
+                BackgroundColor="#004C40"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
