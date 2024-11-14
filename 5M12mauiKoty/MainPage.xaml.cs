@@ -35,6 +35,8 @@ namespace _5M12mauiKoty
         }
         private void onEntryCom(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(entObraz.Text))
+                return;
             int nr = 0;
             if(int.TryParse(entObraz.Text, out nr))
             {

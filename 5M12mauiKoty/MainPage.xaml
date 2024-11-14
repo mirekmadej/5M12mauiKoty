@@ -16,6 +16,8 @@
             <Image
                 Source="kot1.png"
                 x:Name="imgName"
+                Aspect="AspectFill"
+                HeightRequest="400"
                 />
             <Grid>
                 <Grid.RowDefinitions>
@@ -58,11 +60,11 @@
                     x:Name="entObraz"
                     VerticalOptions="Center"
                     WidthRequest="150"
-                    BackgroundColor="white"
                     TextChanged="onEntryCom"
+                    Keyboard="Numeric"
                     />
             </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="340">
+            <HorizontalStackLayout Spacing="20">
                 <Label
                     Text="Tło niebieskie?"
                     VerticalOptions="Center"
