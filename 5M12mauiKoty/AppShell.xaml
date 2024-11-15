@@ -8,7 +8,7 @@
     Title="_5M12mauiKoty">
 
     <ShellContent
-        Title="Home"
+        Title="Galeria"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

@@ -76,7 +76,7 @@
                     />
             </HorizontalStackLayout>
             <Label
-                Text="Autor:Roksana"
+                Text="Autor:Roksana, koty Klaudia"
                 FontSize="20"
                 BackgroundColor="#004C40"
                 />
